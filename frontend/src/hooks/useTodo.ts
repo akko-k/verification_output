@@ -25,7 +25,7 @@ export const useTodo = () => {
     }
   }, []);
 
-  //Todoリストに新規Todoリストを追加
+  //Todoリストに新規Todoを追加
   const addTodo = useCallback(
     async (inputTitle: string, inputContent: string) => {
       try {
