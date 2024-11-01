@@ -5,9 +5,9 @@ WORKDIR /backend
 
 COPY /backend/package*.json .
 # RUN npm install --frozen-lockfile 
-RUN npm install --frozen-lockfile && npm install -g ts-node
+RUN yarn install --frozen-lockfile && yarn global add ts-node
 
-RUN npm install -g nodemon
+RUN yarn global add nodemon
 
 COPY /backend .
 

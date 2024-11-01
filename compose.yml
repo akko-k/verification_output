@@ -35,6 +35,7 @@ services:
       - TZ=Asia/Tokyo
     depends_on:
       - db
+    command: sh -c 'yarn install && yarn run dev'
 
   db:
     container_name: ${MYSQL_CONTAINER_NAME}
