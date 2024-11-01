@@ -41,7 +41,6 @@ describe('useTodo hook', () => {
 
     const { result } = renderHook(() => useTodo());
 
-    // 初期のTodoリストをセット
     await act(async () => {
       await result.current.fetchTodoList();
     });
@@ -69,8 +68,8 @@ describe('useTodo hook', () => {
 
     const { result } = renderHook(() => useTodo());
 
-    act(() => {
-      result.current.fetchTodoList();
+    await act(async () => {
+      await result.current.fetchTodoList();
     });
 
     await act(async () => {
@@ -91,8 +90,8 @@ describe('useTodo hook', () => {
 
     const { result } = renderHook(() => useTodo());
 
-    act(() => {
-      result.current.fetchTodoList();
+    await act(async () => {
+      await result.current.fetchTodoList();
     });
 
     await act(async () => {

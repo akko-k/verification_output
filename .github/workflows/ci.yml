@@ -22,4 +22,4 @@ jobs:
 
       - name: Run tests in frontend container
         run: |
-          docker run --rm frontend yarn test
+          docker run --rm frontend yarn test --watchAll=false
