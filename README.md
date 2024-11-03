@@ -72,10 +72,15 @@ http://localhost:3000/
 
 - TypeScript
 - React
+- CSS Modules
+- Jest
 - Express
 - TypeOrm
+- Storybook
 - Mysql
 - Docker
+- ESLint
+- Prettier
 
 ## テスト
 
@@ -85,7 +90,3 @@ yarn test
 ```
 
 [![CI](https://github.com/akko-k/verification_output/actions/workflows/ci.yml/badge.svg)](https://github.com/akko-k/verification_output/actions/workflows/ci.yml)
-
-```
-
-```

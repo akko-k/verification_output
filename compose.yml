@@ -6,6 +6,7 @@ services:
     tty: true
     ports:
       - '3000:3000'
+      - '6006:6006'
     volumes:
       - ./frontend:/usr/src/frontend
       - /etc/localtime:/etc/localtime:ro # タイムゾーンを日本時刻に設定

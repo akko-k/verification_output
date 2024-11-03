@@ -12,11 +12,7 @@ export const TodoCreateTemplate: FC = () => {
   const { addTodo } = useContext(TodoContext);
   const [
     { inputTitle, inputContent },
-    {
-      handleCreateTitle,
-      handleCreateContent,
-      handleCreateTodo,
-    },
+    { handleCreateTitle, handleCreateContent, handleCreateTodo },
   ] = useTodoCreateTemplate({ addTodo });
 
   return (
@@ -26,7 +22,7 @@ export const TodoCreateTemplate: FC = () => {
           <InputForm
             value={inputTitle}
             placeholder={'タイトル'}
-         onChange={handleCreateTitle}
+            onChange={handleCreateTitle}
           />
         </section>
         <section className={styles.common}>
@@ -37,10 +33,7 @@ export const TodoCreateTemplate: FC = () => {
           />
         </section>
         <section className={styles.common}>
-          <CommonButton
-            label="追加"
-            type="submit"
-          />
+          <CommonButton label="追加" type="submit" />
         </section>
       </form>
     </BaseLayout>

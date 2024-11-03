@@ -20,6 +20,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
     "react-scripts": "^5.0.1",
+    "storybook": "^8.4.1",
     "style-loader": "^4.0.0",
     "typescript": "^4.9.5",
     "web-vitals": "^4.2.3"
@@ -31,7 +32,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,10 +55,20 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@chromatic-com/storybook": "^3",
+    "@storybook/addon-a11y": "^8.4.1",
+    "@storybook/addon-essentials": "^8.4.1",
+    "@storybook/addon-links": "^8.4.1",
+    "@storybook/preset-create-react-app": "^8.4.1",
+    "@storybook/react": "^8.4.1",
+    "@storybook/react-webpack5": "^8.4.1",
     "@types/axios": "^0.14.0",
     "@typescript-eslint/eslint-plugin": "^8.12.2",
     "@typescript-eslint/parser": "^8.12.2",
-    "eslint": "^9.13.0",
+    "eslint": "^9.14.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-react": "^7.37.2",
     "prettier": "^3.3.3"
   }
 }
